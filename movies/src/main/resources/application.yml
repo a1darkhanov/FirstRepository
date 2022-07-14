@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: table-create
+      author: elaman
+      changes:
+        - sqlFile:
+            # dbms: postgres
+            # endDelimiter: /
+            encoding: utf8
+            path: db/table1.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true
+  - changeSet:
+      id: insert
+      author: elaman
+      changes:
+        - sqlFile:
+            # dbms: postgres
+            # endDelimiter: /
+            encoding: utf8
+            path: db/insert.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true

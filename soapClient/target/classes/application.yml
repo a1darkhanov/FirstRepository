@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: recording
+      author: elaman
+      changes:
+        - sqlFile:
+            # dbms: postgres
+            # endDelimiter: /
+            encoding: utf8
+            path: db/1.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true
